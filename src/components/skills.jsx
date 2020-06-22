@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const SkillsContainer = styled.div`
   height: 50rem;
-  background-color: grey;
+  background-color: #f7f7f7;
 `;
 
 const Skills = ({ id }) => {

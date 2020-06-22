@@ -7,12 +7,12 @@ import EmailIcon from '../icons/email.png';
 
 const ContactMeContainer = styled.div`
   height: 5rem;
-  background-color: grey;
+  background-color: #f7f7f7;
+  padding-top: 5px;
 `;
 
 const OptionContainer = styled.div`
-  width: 100%;
-  align-content: center;
+  text-align: center;
 `;
 const Icon = styled.img`
   height: 50px;
@@ -47,11 +47,15 @@ const options = [
 const ContactMe = ({ id }) => {
   return (
     <ContactMeContainer id={id}>
-      <div>Contact Me</div>
       <OptionContainer>
         {options.map(op => {
           return (
-            <a href={op.link} target="_blank" rel="noopener noreferrer">
+            <a
+              href={op.link}
+              key={op.type}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Icon src={op.icon} />
             </a>
           );
