@@ -7,7 +7,7 @@ import EmailIcon from '../icons/email.png';
 
 const ContactMeContainer = styled.div`
   height: 5rem;
-  background-color: #f7f7f7;
+  background-color: lightgray;
   padding-top: 5px;
 `;
 

@@ -15,6 +15,11 @@ const NavBarContainer = styled.div`
   background-color: grey;
   border: 1px solid #e5e7e9;
   border-radius: 3px;
+  display: block;
+  grid-template-columns: 15% 85%;
+`;
+
+const NavBarGrid = styled.div`
   display: grid;
   grid-template-columns: 15% 85%;
 `;
@@ -46,6 +51,7 @@ const HomeLogo = styled.img`
 const NavBar = () => {
   return (
     <NavBarContainer id="navbar">
+      <NavBarGrid>
       <HomeLogo alt="Homelogo" src={twitterLogo} onClick={scrollToTop} />
       <Nav>
         <NavItems>
@@ -99,6 +105,7 @@ const NavBar = () => {
           </li>
         </NavItems>
       </Nav>
+      </NavBarGrid>
     </NavBarContainer>
   );
 };
