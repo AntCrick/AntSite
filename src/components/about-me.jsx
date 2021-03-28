@@ -1,42 +1,59 @@
 import React from 'react';
 import styled from 'styled-components';
-import MrBlobby from '../images/Mr_Blobby_2009.jpg'
+import Me from '../images/me.JPG'
 
 const AboutMeContainer = styled.div`
-  height: 25rem;
-  background-color: whitesmoke;
+  background-color: rgb(247, 247, 247);
+  justify-content: center;
+  padding: 5px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-bottom: 1rem;
+  align-content: center;
+  grid-template-columns: 1fr, 1fr;
+  grid-gap: 20px;
+  column-gap: 10px;
+  text-align: center;
 `;
 
 const Statement = styled.div`
-  margin: 0.5rem;
-  font-size: 0.8rem;
-  color: black;
-  padding: 10px;
-`;
-const StatementContainer = styled.div`
-`;
-const Picture = styled.img`
-    padding: 0.5rem;
-    margin: auto;
+  font-size: 1rem;
+  padding: 2px;
 `;
 
-const statementText1 = `Hi, I'm Anthony. I'm a software developer based in Manchester, England`
-const statementText2 = `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.`
-const statementText3 = `The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.`
+const StatementContainer = styled.div`
+padding-top: 10px;
+`;
+
+const PictureContainer = styled.div`
+    height: 10%;
+    width: 22rem;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  img{
+    object-fit: scale-down;
+    width: inherit;
+    height: auto;
+    box-shadow: rgb(0 0 0 / 18%) 0px 1px 6px;
+    border-radius: 0.25rem;
+    border: 8px solid lightgray;
+  }
+`;
+
+const statementText1 = `Hi, I'm Anthony. I'm a full stack software developer based in Manchester, England. I enjoy solving complex technical problems, i have several years of experience and have developed a skillset which has a large range of technologies and languages` 
+const statementText3 = `When im not coding i enjoy gaming with my friends, watching my football team and a good box set of a tv show`;
 
 const AboutMe = ({ id }) => {
   return (
   <AboutMeContainer id={id}>
-    <StatementContainer>
-      <Statement>{statementText1}</Statement>
-      <Statement>{statementText2}</Statement>
+    <h2>About Me</h2>
+    <StatementContainer class="Text">
+      <Statement >{statementText1}</Statement>
       <Statement>{statementText3}</Statement>        
     </StatementContainer>    
-    <Picture src={MrBlobby}/>  
-  </AboutMeContainer>)  ;
+    <PictureContainer class="Picture">
+      <img src={Me} alt="me"/>
+      </PictureContainer>  
+  </AboutMeContainer>);
 };
 
 export default AboutMe;

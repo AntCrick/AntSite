@@ -1,18 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link, animateScroll as scroll } from 'react-scroll';
-import twitterLogo from '../icons/twitter.png';
+import  Aclogo from '../images/AC-logo.png';
 
 const scrollToTop = () => {
   scroll.scrollToTop();
 };
 
 const NavBarContainer = styled.div`
-  height: 3rem;
+  height: 3.5rem;
   position: fixed;
   top: 0px;
   width: 100%;
-  background-color: grey;
+  background-color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.120);
+  box-shadow: rgb(0 0 0 / 20%) 0px 1px 6px;
   border: 1px solid #e5e7e9;
   border-radius: 3px;
   display: block;
@@ -37,14 +39,14 @@ const NavItems = styled.ul`
     }
 
     :active {
-      border-bottom: 1px solid white;
+      border-bottom: 1px solid black;
     }
   }
 `;
 const Nav = styled.div``;
 const HomeLogo = styled.img`
-  width: 35px;
-  height: 35px;
+  width: 50px;
+  height: 50px;
   padding: 0.3rem;
 `;
 
@@ -52,7 +54,7 @@ const NavBar = () => {
   return (
     <NavBarContainer id="navbar">
       <NavBarGrid>
-      <HomeLogo alt="Homelogo" src={twitterLogo} onClick={scrollToTop} />
+      <HomeLogo onClick={scrollToTop} alt="HomeLogo" src={Aclogo}/>
       <Nav>
         <NavItems>
           <li key="aboutme">
@@ -77,18 +79,6 @@ const NavBar = () => {
               duration={500}
             >
               Skills
-            </Link>
-          </li>
-          <li key="history">
-            <Link
-              activeClass="active"
-              to="experience"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              Experience
             </Link>
           </li>
           <li key="contactme">

@@ -1,50 +1,46 @@
 import React from 'react';
 import styled from 'styled-components';
-import TwitterIcon from '../icons/twitter.png';
-import LinkedInIcon from '../icons/linkedin.png';
-import GitHubIcon from '../icons/github.png';
-import EmailIcon from '../icons/email.png';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 const ContactMeContainer = styled.div`
   height: 5rem;
-  background-color: lightgray;
-  padding-top: 5px;
+  background-color: whitesmoke;
+  padding-top: 15px;
 `;
 
 const OptionContainer = styled.div`
   text-align: center;
-`;
-const Icon = styled.img`
-  height: 50px;
-  width: 50px;
-  padding-left: 20px;
-  padding-right: 20px;
+  a{
+    padding-right: 30px;
+    padding-left: 30px;
+    color: black;
+    :hover {
+        color: lightblue;
+  }
+}
 `;
 
 const options = [
   {
     type: 'Email',
     link: 'mailto:anthonycrick1@gmail.com',
-    icon: EmailIcon
+    icon: 'envelope'
   },
   {
     type: 'LinkedIn',
     link: 'https://www.linkedin.com/in/anthony-crick-a1694076/',
-    icon: LinkedInIcon
+    icon: ["fab", "linkedin"]
   },
   {
     type: 'Github',
     link: 'https://www.github.com/AntCrick',
-    icon: GitHubIcon
+    icon: ["fab", "github"]
   },
-  {
-    type: 'Twitter',
-    link: 'https://www.twitter.com/AntCrick',
-    icon: TwitterIcon
-  }
 ];
 
 const ContactMe = ({ id }) => {
+  const size = "3x";
   return (
     <ContactMeContainer id={id}>
       <OptionContainer>
@@ -56,7 +52,7 @@ const ContactMe = ({ id }) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Icon src={op.icon} />
+              <FontAwesomeIcon icon={op.icon} size={size}/>
             </a>
           );
         })}

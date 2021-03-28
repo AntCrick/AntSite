@@ -1,0 +1,29 @@
+{
+"mySkills": [
+        {
+            "id": 1,
+            "title": "Front End",
+            "skills": ["Javascript", "HTML5", "Sass", "ReactJs", "Redux", "ES6"]
+        },
+        {
+            "id": 2,
+            "title": "Back End",
+            "skills": ["C#", ".Net Core", "NodeJs", "PHP", "Golang"]
+        },
+        {
+            "id": 3,
+            "title": "Cloud/DevOps",
+            "skills": ["AWS", "GCP", "Terraform", "Circle CI", "Docker"]
+        },
+        {
+            "id": 4,
+            "title": "OS",
+            "skills": ["Windows", "OSX", "Linux"]
+        },
+        {
+            "id": 5,
+            "title": "Process",
+            "skills": ["TDD", "Mob Programming", "Pair Programming", "Agile", "Git"]
+        }
+    ]
+}
