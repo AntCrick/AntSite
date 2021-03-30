@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Me from '../images/me.JPG'
+import Me from '../images/me.jpg'
 
 const AboutMeContainer = styled.div`
   background-color: rgb(247, 247, 247);
