@@ -38,8 +38,8 @@ const PictureContainer = styled.div`
   }
 `;
 
-const statementText1 = `Hi, I'm Anthony. I'm a full stack software developer based in Manchester, England. I enjoy solving complex technical problems, i have several years of experience and have developed a skillset which has a large range of technologies and languages` 
-const statementText3 = `When im not coding i enjoy gaming with my friends, watching my football team and a good box set of a tv show`;
+const statementText1 = `` 
+const statementText3 = ``;
 
 const AboutMe = ({ id }) => {
   return (

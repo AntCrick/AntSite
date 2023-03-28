@@ -30,7 +30,7 @@ const Job = styled.div`
 const Home = ({ id }) => {
   return (
   <HomeContainer id={id}>
-    <Name>Anthony Crick</Name>
+    <Name>Ant</Name>
     <Job>Software Developer</Job>
   </HomeContainer>)  ;
 };
