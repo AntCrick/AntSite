@@ -22,21 +22,7 @@ const OptionContainer = styled.div`
 `;
 
 const options = [
-  {
-    type: 'Email',
-    link: 'mailto:anthonycrick1@gmail.com',
-    icon: 'envelope'
-  },
-  {
-    type: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/anthony-crick-a1694076/',
-    icon: ["fab", "linkedin"]
-  },
-  {
-    type: 'Github',
-    link: 'https://www.github.com/AntCrick',
-    icon: ["fab", "github"]
-  },
+  {}
 ];
 
 const ContactMe = ({ id }) => {
