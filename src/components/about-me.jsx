@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Me from '../images/me.jpg'
 
 const AboutMeContainer = styled.div`
   background-color: rgb(247, 247, 247);
@@ -51,7 +50,6 @@ const AboutMe = ({ id }) => {
       <Statement>{statementText3}</Statement>        
     </StatementContainer>    
     <PictureContainer class="Picture">
-      <img src={Me} alt="me"/>
       </PictureContainer>  
   </AboutMeContainer>);
 };
